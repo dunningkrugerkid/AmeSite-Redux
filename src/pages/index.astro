@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/main.css';
+import Space from '../components/Space'
+---
+
+<Layout title="welcome to amesite">
+	<link rel="icon" type="image/x-icon" href="../../public/favicon.ico">
+	<main>
+		<body>
+			<div class="text-white/75 bg-slate-700 bg-opacity-50 bg-rounded-lg border-2 border-slate-500/50">
+				<p>
+				<br>
+				hi<br>
+				im amélie<br>
+				welcome to <b>amesite</b><br>
+				it is called <b>amesite</b> because<br>
+				it is <b>ame's site</b><br>
+				...get it?<br><br>	
+				</p>
+										
+				<p>
+				contact me at the places listed below <br><br>
+				</p>					
+				
+				
+					<ul class="text-white/75">
+						<li>discord: dunningkrugerkid</li>
+						<li><a class="hover:text-white" href="https://github.com/dunningkrugerkid"> github: dunningkrugerkid</a></li>
+						<li>(are you sensing a pattern?)</li>
+					</ul>
+				<p>
+					<br>
+					below are a few stars from a randomly-curated section of space.
+				</p>
+			</div>
+			<Space client:load></Space>
+
+		</body>
+	</main>
+</Layout>
+
+
