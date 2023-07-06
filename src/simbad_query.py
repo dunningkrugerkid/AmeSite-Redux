@@ -41,7 +41,8 @@ def read():
             coord_string = str(coord_hrs1)+"h"+str(coord_min1)+"m"+str(coord_sec1)+"s "+str(coord_hrs2)+"h"+str(coord_min2)+"m"+str(coord_sec2)+"s"
             radius_string = "0d"+str(radius_min)+"m"+str(radius_sec)+"s"
             result = Simbad.query_region(coord.SkyCoord(coord_string), radius=radius_string)
-            done = True
+            if(result != None): # this will occasionally happen if simbad is being queried too frequently, we'll just reroll until it resolves
+                done = True
 
         except ValueError: # Ensuring within range is not something I'm interested in doing atm, we're just going to reroll the strings until it works.
             continue
