@@ -2,7 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import '../styles/main.css';
 import Space from '../components/Space'
+import ClientPanel from "../../components/client/ClientPanel";
 ---
+<Layout title={ 'Client' }>
+    <ClientPanel client:only></ClientPanel>
+</Layout>
 
 <Layout title="welcome to amesite">
 	<link rel="icon" type="image/x-icon" href="../../public/favicon.ico">
@@ -31,7 +35,7 @@ import Space from '../components/Space'
 					</ul>
 				<p>
 					<br>
-					below are a few stars from a randomly-curated section of space.
+					below is a star from a randomly-curated section of space.
 				</p>
 			</div>
 			<Space client:load></Space>
