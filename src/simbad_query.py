@@ -2,11 +2,10 @@ from astroquery.simbad import Simbad
 import astropy.coordinates as coord
 import json, random
 import numpy
-import os
 from fastapi import FastAPI
 from fastapi import Response
 import random
-import uvicorn
+from fastapi.middleware.cors import CORSMiddleware
 
 Simbad.ROW_LIMIT = 15
 
@@ -22,6 +21,16 @@ class NumpyEncoder(json.JSONEncoder):
     
 
 app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def read():
