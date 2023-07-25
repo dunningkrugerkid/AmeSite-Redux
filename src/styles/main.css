@@ -2,13 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (max-width: 768px) {
-    body {
-        height:100vh;
-    }
-}
-
 html, body {
+    min-height:100%;
     height: 100%;
   }
 
@@ -20,6 +15,8 @@ main {
 
 body{
     background-image: url('../img/rotate.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     text-align: center;
 
