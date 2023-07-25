@@ -16,11 +16,11 @@ main {
 body{
     background-image: url('../img/rotate.gif');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     text-align: center;
-    position: relative;
+    position: absolute;
     width:100%;
+    min-height:100vh;
     height:100%;
     padding:0;
     margin:0;
