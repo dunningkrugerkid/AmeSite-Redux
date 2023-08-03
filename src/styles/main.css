@@ -13,6 +13,8 @@ main {
     max-width: 60ch;
 }
 
+
+
 body{
     background-image: url('../img/rotate.gif');
     background-repeat: no-repeat;
@@ -44,6 +46,13 @@ a {
 a:hover span {
 display: block;
 text-align: center;
+}
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+    margin-bottom: 10px; 
 }
 
 .text-gradient {
