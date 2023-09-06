@@ -17,12 +17,9 @@ main {
 
 body{
     background-image: url('../img/rotate.gif');
-    min-height: 100%;
-    min-width:  100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
-    background-size: 100%;
+    background-size: 100% 100%;
 
 }
 h1 {
