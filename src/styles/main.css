@@ -16,7 +16,7 @@ main {
 
 
 body{
-    background-image: url('../img/rotate.gif') top right no-repeat;
+    background-image: url('../img/rotate.gif');
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
