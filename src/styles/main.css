@@ -20,7 +20,7 @@ body{
     background-image: url('../img/rotate.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
 
 }
 h1 {
